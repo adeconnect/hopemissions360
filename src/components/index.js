@@ -1,0 +1,9 @@
+export { default as Header } from './layout/Header';
+export { default as Footer } from './layout/Footer';
+export { default as Hero } from './sections/Hero';
+export { default as About } from './sections/About';
+export { default as Programs } from './sections/Programs';
+export { default as Impact } from './sections/Impact';
+export { default as Team } from './sections/Team';
+export { default as Donate } from './sections/Donate';
+export { default as Contact } from './sections/Contact';
