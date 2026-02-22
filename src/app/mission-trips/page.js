@@ -20,10 +20,10 @@ export default function MissionTripsPage() {
             <Header />
             <main>
                 {/* Hero Section */}
-                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#1e3a5f] to-[#0f1d2f]">
-                    <div className="absolute inset-0 bg-[url('/missions.png')] bg-cover bg-center opacity-30"></div>
+                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#4169e1] to-[#0f1d2f]">
+                    <div className="absolute inset-0 bg-[url('/slides/1.jpeg')] bg-cover bg-center opacity-30"></div>
                     <div className="relative max-w-7xl mx-auto px-6 text-center">
-                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#f4a261] text-sm font-semibold mb-6">
+                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#ffd700] text-sm font-semibold mb-6">
                             JOIN US
                         </span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -39,7 +39,7 @@ export default function MissionTripsPage() {
                 {/* Main Content */}
                 <section className="py-20 bg-white">
                     <div className="max-w-4xl mx-auto px-6">
-                        <div className="bg-gradient-to-br from-[#1e3a5f] to-[#2a4a6f] rounded-3xl p-8 md:p-12 text-center text-white mb-12">
+                        <div className="bg-gradient-to-br from-[#4169e1] to-[#2a4a6f] rounded-3xl p-8 md:p-12 text-center text-white mb-12">
                             <div className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-4xl mx-auto mb-6">
                                 ✈️
                             </div>
@@ -52,7 +52,7 @@ export default function MissionTripsPage() {
                             </p>
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#e63946] text-white font-semibold rounded-full hover:bg-[#d62839] transition-colors"
+                                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#800020] text-white font-semibold rounded-full hover:bg-[#d62839] transition-colors"
                             >
                                 📋 Request Application Form
                             </Link>
@@ -65,21 +65,21 @@ export default function MissionTripsPage() {
                             </h3>
                             <div className="grid md:grid-cols-3 gap-6">
                                 <div className="bg-[#fafafa] rounded-2xl p-6 text-center">
-                                    <div className="w-14 h-14 bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
+                                    <div className="w-14 h-14 bg-[#4169e1]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
                                         🏥
                                     </div>
                                     <h4 className="font-bold text-[#1d1d2c] mb-2">Medical Care</h4>
                                     <p className="text-gray-600 text-sm">Provide medical, dental, and vision services to underserved communities.</p>
                                 </div>
                                 <div className="bg-[#fafafa] rounded-2xl p-6 text-center">
-                                    <div className="w-14 h-14 bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
+                                    <div className="w-14 h-14 bg-[#4169e1]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
                                         🤝
                                     </div>
                                     <h4 className="font-bold text-[#1d1d2c] mb-2">Community Outreach</h4>
                                     <p className="text-gray-600 text-sm">Build relationships and make lasting impacts in local communities.</p>
                                 </div>
                                 <div className="bg-[#fafafa] rounded-2xl p-6 text-center">
-                                    <div className="w-14 h-14 bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
+                                    <div className="w-14 h-14 bg-[#4169e1]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
                                         💒
                                     </div>
                                     <h4 className="font-bold text-[#1d1d2c] mb-2">Faith in Action</h4>
@@ -96,7 +96,7 @@ export default function MissionTripsPage() {
                             <div className="grid sm:grid-cols-2 gap-4">
                                 {pastTrips.map((trip, index) => (
                                     <div key={index} className="bg-white border border-gray-200 rounded-xl p-5 flex items-center gap-4">
-                                        <div className="w-12 h-12 bg-[#e63946]/10 rounded-lg flex items-center justify-center text-xl">
+                                        <div className="w-12 h-12 bg-[#800020]/10 rounded-lg flex items-center justify-center text-xl">
                                             🌍
                                         </div>
                                         <div>
@@ -104,7 +104,7 @@ export default function MissionTripsPage() {
                                                 {trip.location} {trip.year}
                                             </h4>
                                             <p className="text-gray-600 text-sm">{trip.type}</p>
-                                            {trip.date && <p className="text-[#e63946] text-xs font-medium">{trip.date}</p>}
+                                            {trip.date && <p className="text-[#800020] text-xs font-medium">{trip.date}</p>}
                                         </div>
                                     </div>
                                 ))}

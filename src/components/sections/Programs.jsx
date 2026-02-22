@@ -73,10 +73,10 @@ export default function Programs() {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Section Header */}
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <span className="inline-block text-sm font-semibold text-[#e63946] uppercase tracking-widest mb-3">
+                    <span className="inline-block text-sm font-semibold text-[#800020] uppercase tracking-widest mb-3">
                         What We Do
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mb-4">
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#4169e1] mb-4">
                         Our Programs
                     </h2>
                     <p className="text-lg text-gray-500">
@@ -99,13 +99,13 @@ export default function Programs() {
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/60 to-transparent" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#4169e1]/60 to-transparent" />
                             </div>
                             <div className="p-6">
                                 <span className="text-3xl mb-3 block">{program.icon}</span>
-                                <h3 className="text-xl font-semibold text-[#1e3a5f] mb-2">{program.title}</h3>
+                                <h3 className="text-xl font-semibold text-[#4169e1] mb-2">{program.title}</h3>
                                 <p className="text-gray-500 text-sm leading-relaxed mb-4">{program.text}</p>
-                                <a href="#contact" className="text-[#e63946] font-semibold text-sm hover:gap-2 inline-flex items-center gap-1 transition-all">
+                                <a href="#contact" className="text-[#800020] font-semibold text-sm hover:gap-2 inline-flex items-center gap-1 transition-all">
                                     Learn More →
                                 </a>
                             </div>
@@ -122,7 +122,7 @@ export default function Programs() {
                             style={{ transitionDelay: `${(i + 3) * 100}ms` }}
                         >
                             <span className="text-3xl mb-3 block">{program.icon}</span>
-                            <h3 className="text-lg font-semibold text-[#1e3a5f] mb-2">{program.title}</h3>
+                            <h3 className="text-lg font-semibold text-[#4169e1] mb-2">{program.title}</h3>
                             <p className="text-gray-500 text-sm leading-relaxed">{program.text}</p>
                         </div>
                     ))}

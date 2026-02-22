@@ -12,10 +12,10 @@ export default function ContactPage() {
             <Header />
             <main>
                 {/* Hero Section */}
-                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#1e3a5f] to-[#0f1d2f]">
-                    <div className="absolute inset-0 bg-[url('/hero.png')] bg-cover bg-center opacity-20"></div>
+                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#4169e1] to-[#0f1d2f]">
+                    <div className="absolute inset-0 bg-[url('/slides/6.jpeg')] bg-cover bg-center opacity-20"></div>
                     <div className="relative max-w-7xl mx-auto px-6 text-center">
-                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#f4a261] text-sm font-semibold mb-6">
+                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#ffd700] text-sm font-semibold mb-6">
                             GET IN TOUCH
                         </span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -41,7 +41,7 @@ export default function ContactPage() {
                                             <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
                                             <input
                                                 type="text"
-                                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#1e3a5f] focus:ring-2 focus:ring-[#1e3a5f]/20 outline-none transition-all"
+                                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all"
                                                 placeholder="Your first name"
                                             />
                                         </div>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                                             <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
                                             <input
                                                 type="text"
-                                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#1e3a5f] focus:ring-2 focus:ring-[#1e3a5f]/20 outline-none transition-all"
+                                                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all"
                                                 placeholder="Your last name"
                                             />
                                         </div>
@@ -58,7 +58,7 @@ export default function ContactPage() {
                                         <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                                         <input
                                             type="email"
-                                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#1e3a5f] focus:ring-2 focus:ring-[#1e3a5f]/20 outline-none transition-all"
+                                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all"
                                             placeholder="your@email.com"
                                         />
                                     </div>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                                         <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
                                         <input
                                             type="tel"
-                                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#1e3a5f] focus:ring-2 focus:ring-[#1e3a5f]/20 outline-none transition-all"
+                                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all"
                                             placeholder="(555) 123-4567"
                                         />
                                     </div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                                         <label className="block text-sm font-medium text-gray-700 mb-2">Specialty (if applicable)</label>
                                         <input
                                             type="text"
-                                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#1e3a5f] focus:ring-2 focus:ring-[#1e3a5f]/20 outline-none transition-all"
+                                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all"
                                             placeholder="e.g., Nurse, Dentist, Teacher..."
                                         />
                                     </div>
@@ -82,13 +82,13 @@ export default function ContactPage() {
                                         <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                                         <textarea
                                             rows="4"
-                                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#1e3a5f] focus:ring-2 focus:ring-[#1e3a5f]/20 outline-none transition-all resize-none"
+                                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all resize-none"
                                             placeholder="How can we help you?"
                                         ></textarea>
                                     </div>
                                     <button
                                         type="submit"
-                                        className="w-full py-4 bg-gradient-to-r from-[#e63946] to-[#ff4d5a] text-white font-semibold rounded-xl hover:shadow-lg transition-all"
+                                        className="w-full py-4 bg-gradient-to-r from-[#800020] to-[#a52a2a] text-white font-semibold rounded-xl hover:shadow-lg transition-all"
                                     >
                                         Send Message
                                     </button>
@@ -102,12 +102,12 @@ export default function ContactPage() {
                                 {/* Email */}
                                 <div className="bg-[#fafafa] rounded-2xl p-6 mb-4">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center text-xl shrink-0">
+                                        <div className="w-12 h-12 bg-[#4169e1]/10 rounded-xl flex items-center justify-center text-xl shrink-0">
                                             📧
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-[#1d1d2c] mb-1">Email</h3>
-                                            <a href="mailto:hopemissions360@gmail.com" className="text-[#e63946] hover:underline">
+                                            <a href="mailto:hopemissions360@gmail.com" className="text-[#800020] hover:underline">
                                                 hopemissions360@gmail.com
                                             </a>
                                         </div>
@@ -117,7 +117,7 @@ export default function ContactPage() {
                                 {/* Physical Address */}
                                 <div className="bg-[#fafafa] rounded-2xl p-6 mb-4">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center text-xl shrink-0">
+                                        <div className="w-12 h-12 bg-[#4169e1]/10 rounded-xl flex items-center justify-center text-xl shrink-0">
                                             📍
                                         </div>
                                         <div>
@@ -134,7 +134,7 @@ export default function ContactPage() {
                                 {/* Mailing Address */}
                                 <div className="bg-[#fafafa] rounded-2xl p-6 mb-6">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center text-xl shrink-0">
+                                        <div className="w-12 h-12 bg-[#4169e1]/10 rounded-xl flex items-center justify-center text-xl shrink-0">
                                             ✉️
                                         </div>
                                         <div>
@@ -149,7 +149,7 @@ export default function ContactPage() {
                                 </div>
 
                                 {/* Volunteer Note */}
-                                <div className="bg-[#1e3a5f] rounded-2xl p-6 text-white">
+                                <div className="bg-[#4169e1] rounded-2xl p-6 text-white">
                                     <h3 className="font-bold mb-3">Want to Volunteer?</h3>
                                     <p className="text-white/80 text-sm mb-4">
                                         If you would like to participate in our short-term volunteer opportunities,
@@ -158,14 +158,14 @@ export default function ContactPage() {
                                     </p>
                                     <a
                                         href="mailto:hopemissions360@gmail.com"
-                                        className="inline-flex items-center gap-2 text-[#f4a261] hover:text-white transition-colors font-medium"
+                                        className="inline-flex items-center gap-2 text-[#ffd700] hover:text-white transition-colors font-medium"
                                     >
                                         Email Us <span>→</span>
                                     </a>
                                 </div>
 
                                 {/* Newsletter Signup */}
-                                <div className="mt-6 bg-gradient-to-r from-[#e63946] to-[#ff4d5a] rounded-2xl p-6 text-white">
+                                <div className="mt-6 bg-gradient-to-r from-[#800020] to-[#a52a2a] rounded-2xl p-6 text-white">
                                     <h3 className="font-bold mb-2">Stay Updated</h3>
                                     <p className="text-white/90 text-sm mb-4">
                                         Sign up to receive email updates on the work of Hope Missions 360, Inc.
@@ -177,7 +177,7 @@ export default function ContactPage() {
                                             placeholder="Your email"
                                             className="flex-1 px-4 py-2 rounded-lg bg-white/20 text-white placeholder-white/60 border border-white/30 focus:bg-white/30 outline-none"
                                         />
-                                        <button className="px-4 py-2 bg-white text-[#e63946] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                                        <button className="px-4 py-2 bg-white text-[#800020] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
                                             Subscribe
                                         </button>
                                     </div>

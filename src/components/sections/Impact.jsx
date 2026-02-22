@@ -59,12 +59,12 @@ export default function Impact() {
         <section
             id="impact"
             ref={sectionRef}
-            className="py-24 bg-gradient-to-br from-[#1e3a5f] to-[#152a45] text-white text-center"
+            className="py-24 bg-gradient-to-br from-[#4169e1] to-[#2a4bba] text-white text-center"
         >
             <div className="max-w-7xl mx-auto px-6">
                 {/* Section Header */}
                 <div className="max-w-2xl mx-auto mb-16">
-                    <span className="inline-block text-sm font-semibold text-[#f4a261] uppercase tracking-widest mb-3">
+                    <span className="inline-block text-sm font-semibold text-[#ffd700] uppercase tracking-widest mb-3">
                         Our Impact
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -77,7 +77,7 @@ export default function Impact() {
                     {stats.map((stat) => (
                         <div key={stat.label} className="p-6">
                             <span
-                                className="stat-counter block text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-white to-[#f4a261] bg-clip-text text-transparent mb-2"
+                                className="stat-counter block text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-white to-[#ffd700] bg-clip-text text-transparent mb-2"
                                 data-target={stat.target}
                             >
                                 0

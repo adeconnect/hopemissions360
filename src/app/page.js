@@ -4,6 +4,10 @@ import {
   Header,
   Footer,
   Hero,
+  EventsSlider,
+  VideoSection,
+  VolunteerSection,
+  QRCodeSection,
 } from '@/components';
 
 export const metadata = {
@@ -32,71 +36,17 @@ export default function Home() {
       <main>
         <Hero />
 
-        {/* Featured Event: Heritage Gala */}
-        <section className="relative py-16 bg-gradient-to-r from-gray-900 via-[#1a1a1a] to-gray-900 text-white overflow-hidden">
-          <div className="absolute inset-0 opacity-20 bg-[url('/pattern.png')] bg-fixed"></div>
-          <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        {/* Events Slider */}
+        <EventsSlider />
 
-          <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-              <div className="flex-1 text-center md:text-left">
-                <span className="inline-block px-4 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm font-bold tracking-wide mb-4 border border-yellow-500/30">
-                  UPCOMING EVENT
-                </span>
-                <h2 className="text-3xl md:text-5xl font-bold mb-4 font-serif">
-                  <span className="text-white">Heritage in</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Harmony Gala</span>
-                </h2>
-                <p className="text-xl text-gray-300 mb-8 max-w-xl">
-                  Join us for <span className="italic text-white">"Still We Rise"</span> — an evening of celebration, culture, and artistry.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                  <Link
-                    href="/heritage-gala"
-                    className="inline-flex items-center justify-center px-8 py-3 bg-white text-gray-900 font-bold rounded-full hover:bg-yellow-400 transition-colors shadow-lg"
-                  >
-                    View Details
-                  </Link>
-                  <Link
-                    href="/heritage-gala#tickets"
-                    className="inline-flex items-center justify-center px-8 py-3 bg-transparent border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-colors"
-                  >
-                    Get Tickets
-                  </Link>
-                </div>
-              </div>
-
-              <div className="flex-1 w-full max-w-md md:max-w-none">
-                <div className="relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center text-yellow-500 text-xl font-bold">
-                      18
-                    </div>
-                    <div>
-                      <p className="text-lg font-bold">April 18, 2026</p>
-                      <p className="text-gray-400">Saturday @ 7:30 PM</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center text-green-500 text-xl">
-                      📍
-                    </div>
-                    <div>
-                      <p className="text-lg font-bold">New Black Wallstreet</p>
-                      <p className="text-gray-400">Stonecrest, GA</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Video Clip */}
+        <VideoSection />
 
         {/* Mission Overview */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-[#1e3a5f]/10 rounded-full text-[#1e3a5f] text-sm font-semibold mb-4">
+              <span className="inline-block px-4 py-2 bg-[#4169e1]/10 rounded-full text-[#4169e1] text-sm font-semibold mb-4">
                 WHO WE ARE
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#1d1d2c] mb-4">Our Mission & Vision</h2>
@@ -107,7 +57,7 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gradient-to-br from-[#1e3a5f] to-[#2a4a6f] rounded-3xl p-8 text-white">
+              <div className="bg-gradient-to-br from-[#4169e1] to-[#2a4a6f] rounded-3xl p-8 text-white">
                 <div className="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-2xl mb-4">
                   🎯
                 </div>
@@ -117,7 +67,7 @@ export default function Home() {
                   as well as meeting the basic needs of underserved populations.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-[#e63946] to-[#ff4d5a] rounded-3xl p-8 text-white">
+              <div className="bg-gradient-to-br from-[#800020] to-[#a52a2a] rounded-3xl p-8 text-white">
                 <div className="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-2xl mb-4">
                   👁️
                 </div>
@@ -132,7 +82,7 @@ export default function Home() {
             <div className="text-center">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-[#1e3a5f] font-semibold hover:text-[#e63946] transition-colors"
+                className="inline-flex items-center gap-2 text-[#4169e1] font-semibold hover:text-[#800020] transition-colors"
               >
                 Learn more about us <span>→</span>
               </Link>
@@ -144,7 +94,7 @@ export default function Home() {
         <section className="py-20 bg-[#fafafa]">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-[#e63946]/10 rounded-full text-[#e63946] text-sm font-semibold mb-4">
+              <span className="inline-block px-4 py-2 bg-[#800020]/10 rounded-full text-[#800020] text-sm font-semibold mb-4">
                 WHAT WE DO
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#1d1d2c] mb-4">Our Programs</h2>
@@ -173,7 +123,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-lg font-bold text-[#1d1d2c] group-hover:text-[#e63946] transition-colors">
+                    <h3 className="text-lg font-bold text-[#1d1d2c] group-hover:text-[#800020] transition-colors">
                       {program.title}
                     </h3>
                   </div>
@@ -184,7 +134,7 @@ export default function Home() {
             <div className="text-center">
               <Link
                 href="/programs"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#1e3a5f] text-white font-semibold rounded-full hover:bg-[#2a4a6f] transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#4169e1] text-white font-semibold rounded-full hover:bg-[#2a4a6f] transition-colors"
               >
                 View All Programs
               </Link>
@@ -193,7 +143,7 @@ export default function Home() {
         </section>
 
         {/* Impact Stats */}
-        <section className="py-16 bg-gradient-to-r from-[#1e3a5f] to-[#2a4a6f]">
+        <section className="py-16 bg-gradient-to-r from-[#4169e1] to-[#2a4a6f]">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
@@ -206,33 +156,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1d1d2c] mb-6">
-              Make a Difference Today
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              A monumental "Thank You" to all our volunteers who made this possible.
-              Hope Missions 360, Inc. is committed to service and helping those in need
-              in the Caribbean, Central America, and the United States of America.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/donate"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#e63946] to-[#ff4d5a] text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all"
-              >
-                ❤️ Make a Donation
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#1e3a5f] text-[#1e3a5f] font-semibold rounded-full hover:bg-[#1e3a5f] hover:text-white transition-all"
-              >
-                I Would Like to Volunteer
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Volunteer Form Section */}
+        <VolunteerSection />
+
+        {/* QR Code Section */}
+        <QRCodeSection />
       </main>
       <Footer />
     </>

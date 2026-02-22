@@ -1,19 +1,43 @@
+'use client';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+const slides = [
+    '/slides/1.jpeg',
+    '/slides/2.jpeg',
+    '/slides/3.jpeg',
+    '/slides/4.jpeg',
+    '/slides/5.jpeg',
+    '/slides/6.jpeg',
+];
+
 export default function Hero() {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % slides.length);
+        }, 5000);
+        return () => clearInterval(timer);
+    }, []);
+
     return (
-        <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-            {/* Background Image */}
+        <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+            {/* Background Image Carousel */}
             <div className="absolute inset-0 z-0">
-                <Image
-                    src="http://nebula.wsimg.com/b2c98379fa5932fdcde531c2fab71080?AccessKeyId=ED10005F385AFE4A2117&disposition=0&alloworigin=1"
-                    alt="Hope Missions volunteers providing care"
-                    fill
-                    className="object-cover"
-                    priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a5f]/90 via-[#1e3a5f]/75 to-[#152a45]/85" />
+                {slides.map((slide, index) => (
+                    <Image
+                        key={slide}
+                        src={slide}
+                        alt={`Hope Missions slide ${index + 1}`}
+                        fill
+                        className={`object-cover transition-opacity duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+                            }`}
+                        priority={index === 0}
+                    />
+                ))}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#4169e1]/90 via-[#4169e1]/75 to-[#2a4bba]/85" />
             </div>
 
             {/* Content */}
@@ -34,7 +58,7 @@ export default function Hero() {
                 <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row gap-4 justify-center">
                     <Link
                         href="/donate"
-                        className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#e63946] to-[#ff4d5a] text-white font-semibold text-lg rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all btn-glow"
+                        className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#800020] to-[#a52a2a] text-white font-semibold text-lg rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all btn-glow"
                     >
                         <span>❤</span> Make a Donation
                     </Link>

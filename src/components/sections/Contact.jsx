@@ -32,10 +32,10 @@ export default function Contact() {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Section Header */}
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <span className="inline-block text-sm font-semibold text-[#e63946] uppercase tracking-widest mb-3">
+                    <span className="inline-block text-sm font-semibold text-[#800020] uppercase tracking-widest mb-3">
                         Get In Touch
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mb-4">
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#4169e1] mb-4">
                         Contact Us
                     </h2>
                 </div>
@@ -47,9 +47,9 @@ export default function Contact() {
                             <div key={item.label} className="flex gap-4 items-start">
                                 <span className="text-3xl">{item.icon}</span>
                                 <div>
-                                    <h4 className="font-semibold text-lg text-[#1e3a5f] mb-1">{item.label}</h4>
+                                    <h4 className="font-semibold text-lg text-[#4169e1] mb-1">{item.label}</h4>
                                     {item.href ? (
-                                        <a href={item.href} className="text-gray-500 hover:text-[#e63946] transition-colors">
+                                        <a href={item.href} className="text-gray-500 hover:text-[#800020] transition-colors">
                                             {item.value}
                                         </a>
                                     ) : (
@@ -73,7 +73,7 @@ export default function Contact() {
                                 placeholder="Your name"
                                 value={formData.name}
                                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#1e3a5f] transition-colors"
+                                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#4169e1] transition-colors"
                             />
                         </div>
 
@@ -88,7 +88,7 @@ export default function Contact() {
                                 placeholder="your@email.com"
                                 value={formData.email}
                                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#1e3a5f] transition-colors"
+                                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#4169e1] transition-colors"
                             />
                         </div>
 
@@ -101,7 +101,7 @@ export default function Contact() {
                                 required
                                 value={formData.subject}
                                 onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#1e3a5f] transition-colors"
+                                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#4169e1] transition-colors"
                             >
                                 <option value="">Select a topic</option>
                                 <option value="volunteer">Volunteer Opportunities</option>
@@ -123,13 +123,13 @@ export default function Contact() {
                                 placeholder="How can we help you?"
                                 value={formData.message}
                                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#1e3a5f] transition-colors resize-y"
+                                className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#4169e1] transition-colors resize-y"
                             />
                         </div>
 
                         <button
                             type="submit"
-                            className="w-full py-4 bg-gradient-to-r from-[#e63946] to-[#ff4d5a] text-white font-semibold text-lg rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
+                            className="w-full py-4 bg-gradient-to-r from-[#800020] to-[#a52a2a] text-white font-semibold text-lg rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
                         >
                             Send Message
                         </button>

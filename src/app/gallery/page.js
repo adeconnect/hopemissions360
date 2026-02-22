@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Header, Footer } from '@/components';
+import { Header, Footer, GalleryView } from '@/components';
 
 export const metadata = {
     title: 'Gallery | Hope Missions 360',
@@ -11,37 +11,37 @@ export default function GalleryPage() {
         {
             title: 'Jamaica Mission Trip 2017',
             location: 'Jamaica',
-            images: ['/missions.png', '/medical.png', '/feeding.png']
+            images: ["/gallery/img_4.jpg", "/gallery/img_8.jpg", "/gallery/img_29.jpg", "/gallery/img_3.jpg", "/gallery/img_32.jpg", "/gallery/img_23.jpg", "/gallery/img_31.jpg", "/gallery/img_2.jpg", "/gallery/img_19.jpg", "/gallery/img_28.jpg"]
         },
         {
             title: 'Annual Thanksgiving Project',
             location: 'Atlanta, Georgia',
-            images: ['/feeding.png', '/hero.png', '/medical.png']
+            images: ["/gallery/img_42.jpg", "/gallery/img_11.jpg", "/gallery/img_17.jpg", "/gallery/img_21.jpg", "/gallery/img_53.jpg", "/gallery/img_47.jpg", "/gallery/img_30.jpg", "/gallery/img_22.jpg", "/gallery/img_45.jpg", "/gallery/img_70.jpg"]
         },
         {
             title: 'Feeding Program',
             location: 'Decatur, Georgia',
-            images: ['/feeding.png', '/medical.png', '/missions.png']
+            images: ["/gallery/img_38.jpg", "/gallery/img_48.jpg", "/gallery/img_7.jpg", "/gallery/img_50.jpg", "/gallery/img_49.jpg", "/gallery/img_18.jpg", "/gallery/img_36.jpg", "/gallery/img_39.jpg", "/gallery/img_58.jpg", "/gallery/img_5.jpg"]
         },
         {
             title: 'Belize Mission Trip 2018',
             location: 'Belize',
-            images: ['/missions.png', '/hero.png', '/feeding.png']
+            images: ["/gallery/img_66.jpg", "/gallery/img_25.jpg", "/gallery/img_6.jpg", "/gallery/img_41.jpg", "/gallery/img_34.jpg", "/gallery/img_14.jpg", "/gallery/img_10.jpg", "/gallery/img_65.jpg", "/gallery/img_61.jpg", "/gallery/img_51.jpg"]
         },
         {
             title: 'Kids Summer Splash Camp',
             location: 'Decatur, Georgia',
-            images: ['/feeding.png', '/hero.png', '/medical.png']
+            images: ["/gallery/img_55.jpg", "/gallery/img_40.jpg", "/gallery/img_13.jpg", "/gallery/img_35.jpg", "/gallery/img_26.jpg", "/gallery/img_16.jpg", "/gallery/img_54.jpg", "/gallery/img_33.jpg", "/gallery/img_57.jpg", "/gallery/img_46.jpg"]
         },
         {
             title: 'Construction Mission Trip',
             location: 'Jamaica - June 20-25, 2018',
-            images: ['/hero.png', '/missions.png', '/medical.png']
+            images: ["/gallery/img_1.jpg", "/gallery/img_27.jpg", "/gallery/img_62.jpg", "/gallery/img_56.jpg", "/gallery/img_63.jpg", "/gallery/img_60.jpg", "/gallery/img_24.jpg", "/gallery/img_44.jpg", "/gallery/img_52.jpg", "/gallery/img_12.jpg"]
         },
         {
             title: 'Dominican Republic Mission Trip 2018',
             location: 'Dominican Republic',
-            images: ['/missions.png', '/medical.png', '/feeding.png']
+            images: ["/gallery/img_9.jpg", "/gallery/img_43.jpg", "/gallery/img_15.jpg", "/gallery/img_69.jpg", "/gallery/img_64.jpg", "/gallery/img_67.jpg", "/gallery/img_68.jpg", "/gallery/img_59.jpg", "/gallery/img_20.jpg", "/gallery/img_37.jpg"]
         }
     ];
 
@@ -50,10 +50,10 @@ export default function GalleryPage() {
             <Header />
             <main>
                 {/* Hero Section */}
-                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#1e3a5f] to-[#0f1d2f]">
-                    <div className="absolute inset-0 bg-[url('/missions.png')] bg-cover bg-center opacity-30"></div>
+                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#4169e1] to-[#0f1d2f]">
+                    <div className="absolute inset-0 bg-[url('/slides/5.jpeg')] bg-cover bg-center opacity-30"></div>
                     <div className="relative max-w-7xl mx-auto px-6 text-center">
-                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#f4a261] text-sm font-semibold mb-6">
+                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#ffd700] text-sm font-semibold mb-6">
                             OUR MEMORIES
                         </span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -66,42 +66,7 @@ export default function GalleryPage() {
                 </section>
 
                 {/* Gallery Sections */}
-                <section className="py-20 bg-white">
-                    <div className="max-w-7xl mx-auto px-6">
-                        {galleries.map((gallery, index) => (
-                            <div key={index} className="mb-16 last:mb-0">
-                                <div className="flex items-center gap-4 mb-6">
-                                    <div className="w-12 h-12 bg-[#e63946]/10 rounded-xl flex items-center justify-center text-xl">
-                                        📸
-                                    </div>
-                                    <div>
-                                        <h2 className="text-xl md:text-2xl font-bold text-[#1d1d2c]">
-                                            {gallery.title}
-                                        </h2>
-                                        <p className="text-gray-600 text-sm">{gallery.location}</p>
-                                    </div>
-                                </div>
-
-                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                    {gallery.images.map((image, imgIndex) => (
-                                        <div
-                                            key={imgIndex}
-                                            className="relative aspect-[4/3] rounded-xl overflow-hidden group cursor-pointer"
-                                        >
-                                            <Image
-                                                src={image}
-                                                alt={`${gallery.title} - Photo ${imgIndex + 1}`}
-                                                fill
-                                                className="object-cover transition-transform duration-300 group-hover:scale-110"
-                                            />
-                                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors"></div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </section>
+                <GalleryView galleries={galleries} />
 
                 {/* CTA */}
                 <section className="py-16 bg-[#fafafa]">
@@ -114,7 +79,7 @@ export default function GalleryPage() {
                         </p>
                         <a
                             href="/mission-trips"
-                            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#1e3a5f] text-white font-semibold rounded-full hover:bg-[#2a4a6f] transition-colors"
+                            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#4169e1] text-white font-semibold rounded-full hover:bg-[#2a4a6f] transition-colors"
                         >
                             ✈️ Join a Mission Trip
                         </a>

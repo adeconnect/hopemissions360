@@ -10,7 +10,7 @@ export default function Donate() {
     return (
         <section id="donate" className="py-24 bg-[#1d1d2c] text-white text-center">
             <div className="max-w-3xl mx-auto px-6">
-                <span className="inline-block px-6 py-2 mb-6 text-sm font-semibold text-[#f4a261] bg-[#f4a261]/20 rounded-full uppercase tracking-wider">
+                <span className="inline-block px-6 py-2 mb-6 text-sm font-semibold text-[#ffd700] bg-[#ffd700]/20 rounded-full uppercase tracking-wider">
                     Support Our Mission
                 </span>
 
@@ -29,7 +29,7 @@ export default function Donate() {
                             key={amount}
                             onClick={() => setSelectedAmount(amount)}
                             className={`px-6 py-3 rounded-xl font-semibold text-lg transition-all ${selectedAmount === amount
-                                    ? 'bg-[#e63946] border-2 border-[#e63946] scale-105'
+                                    ? 'bg-[#800020] border-2 border-[#800020] scale-105'
                                     : 'bg-white/10 border-2 border-white/20 hover:bg-white/20'
                                 }`}
                         >
@@ -43,7 +43,7 @@ export default function Donate() {
                     href="https://www.paypal.com/donate"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-10 py-5 bg-gradient-to-r from-[#e63946] to-[#ff4d5a] text-white font-bold text-xl rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all btn-glow"
+                    className="inline-flex items-center gap-2 px-10 py-5 bg-gradient-to-r from-[#800020] to-[#a52a2a] text-white font-bold text-xl rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all btn-glow"
                 >
                     ❤ Donate Now
                 </a>

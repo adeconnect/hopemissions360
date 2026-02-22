@@ -10,32 +10,36 @@ export const metadata = {
 export default function ProgramsPage() {
     const programs = [
         {
-            title: 'Medical Services',
+            title: 'Annual Medical Mission Trip',
             description: 'Medical services are offered by various licensed medical professionals including: Physicians, Nurses, Dentists, Physical Therapists, Audiologists, Ophthalmologists, and much more. Delivery of quality healthcare worldwide is our priority with disadvantaged communities at the center of our care.',
             quote: '"Do things for people not because of who they are or what they do in return, but because of who you are" – Mother Teresa',
             image: 'http://nebula.wsimg.com/6f4bf186c885ece24f758b41f30eacea?AccessKeyId=ED10005F385AFE4A2117&disposition=0&alloworigin=1',
             icon: '🏥'
         },
         {
-            title: 'Hope Kidz Mission',
-            description: 'Hope Mission 360 Inc. provides child-centered fundamentals on personal hygiene and dental health, infection prevention, and safety. Interactions through song and dance bridge our educational workshops, creating an interactive environment for the children to experience learning through their perception of the world.',
-            extra: 'Donations from our annual back to school drive reach over 2,000 items including backpacks, shoes, school supplies, donated clothes, children\'s books, and toys with proceeds going to underserved and displaced children in metro Atlanta.',
-            image: 'http://nebula.wsimg.com/6e79eefb39c3c18f8f6793d880e77916?AccessKeyId=ED10005F385AFE4A2117&disposition=0&alloworigin=1',
-            icon: '👦'
-        },
-        {
-            title: 'Feeding Program',
-            description: 'We provided food for children and families as well as training on the importance of having a healthy meal. Without adequate food and proper nutrition, children are unable to perform at their full potential both physically and mentally.',
+            title: 'Monthly Feeding Program',
+            description: 'We provide food for children and families as well as training on the importance of having a healthy meal. Without adequate food and proper nutrition, children are unable to perform at their full potential both physically and mentally.',
             extra: 'Join us at our annual Easter, Summer, Thanksgiving, and Christmas dinner outreach program dedicated to serving local children in Metro Atlanta.',
             image: 'http://nebula.wsimg.com/724c1990c0a0d9a830c9f2aa45ecd386?AccessKeyId=ED10005F385AFE4A2117&disposition=0&alloworigin=1',
             icon: '🍽️'
         },
         {
-            title: 'Health Fairs',
-            description: 'Join us for our annual back to school bashment! A fun event to help children of all ages prepare to go back to school! Every child in our community deserves access to quality education and school supplies to ensure academic success.',
-            extra: 'We supply free backpacks, haircuts, sports physicals, health/dental screenings and of course entertainment for the entire family.',
+            title: 'Education – Computer Robotic Programming',
+            description: 'Equipping the next generation with essential technological skills. Our computer robotic programming initiative introduces youth to STEM fields, fostering creativity, problem-solving, and future career opportunities.',
+            image: 'http://nebula.wsimg.com/6e79eefb39c3c18f8f6793d880e77916?AccessKeyId=ED10005F385AFE4A2117&disposition=0&alloworigin=1',
+            icon: '💻'
+        },
+        {
+            title: 'Disaster Relief',
+            description: 'Emergency response and relief projects for communities in crisis. We deploy resources, medical aid, and essential supplies to areas affected by natural disasters, providing immediate support and long-term recovery assistance.',
             image: 'http://nebula.wsimg.com/6f4bf186c885ece24f758b41f30eacea?AccessKeyId=ED10005F385AFE4A2117&disposition=0&alloworigin=1',
-            icon: '🎪'
+            icon: '🆘'
+        },
+        {
+            title: 'Social Welfare',
+            description: 'Addressing the holistic needs of our communities. Our social welfare programs provide counseling, resource distribution, and empowerment workshops designed to uplift marginalized families and individuals.',
+            image: 'http://nebula.wsimg.com/b2c98379fa5932fdcde531c2fab71080?AccessKeyId=ED10005F385AFE4A2117&disposition=0&alloworigin=1',
+            icon: '🤝'
         }
     ];
 
@@ -51,10 +55,10 @@ export default function ProgramsPage() {
             <Header />
             <main>
                 {/* Hero Section */}
-                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#1e3a5f] to-[#0f1d2f]">
-                    <div className="absolute inset-0 bg-[url('/missions.png')] bg-cover bg-center opacity-20"></div>
+                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#4169e1] to-[#0f1d2f]">
+                    <div className="absolute inset-0 bg-[url('/slides/2.jpeg')] bg-cover bg-center opacity-20"></div>
                     <div className="relative max-w-7xl mx-auto px-6 text-center">
-                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#f4a261] text-sm font-semibold mb-6">
+                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#ffd700] text-sm font-semibold mb-6">
                             WHAT WE DO
                         </span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -104,7 +108,7 @@ export default function ProgramsPage() {
                                         </p>
                                     )}
                                     {program.quote && (
-                                        <blockquote className="border-l-4 border-[#e63946] pl-4 italic text-gray-500">
+                                        <blockquote className="border-l-4 border-[#800020] pl-4 italic text-gray-500">
                                             {program.quote}
                                         </blockquote>
                                     )}
@@ -133,10 +137,10 @@ export default function ProgramsPage() {
                                     href={program.href}
                                     className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-100"
                                 >
-                                    <div className="w-14 h-14 bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:bg-[#e63946] group-hover:text-white transition-colors">
+                                    <div className="w-14 h-14 bg-[#4169e1]/10 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:bg-[#800020] group-hover:text-white transition-colors">
                                         {program.icon}
                                     </div>
-                                    <h3 className="text-lg font-bold text-[#1d1d2c] mb-2 group-hover:text-[#e63946] transition-colors">
+                                    <h3 className="text-lg font-bold text-[#1d1d2c] mb-2 group-hover:text-[#800020] transition-colors">
                                         {program.title}
                                     </h3>
                                     <p className="text-gray-600 text-sm">
@@ -149,7 +153,7 @@ export default function ProgramsPage() {
                 </section>
 
                 {/* Volunteer CTA */}
-                <section className="py-16 bg-[#e63946]">
+                <section className="py-16 bg-[#800020]">
                     <div className="max-w-4xl mx-auto px-6 text-center">
                         <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                             Become a Volunteer!
@@ -160,7 +164,7 @@ export default function ProgramsPage() {
                         </p>
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#e63946] font-semibold rounded-full hover:bg-gray-100 transition-colors"
+                            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#800020] font-semibold rounded-full hover:bg-gray-100 transition-colors"
                         >
                             I Would Like to Volunteer
                         </Link>

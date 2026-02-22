@@ -12,7 +12,7 @@ export default function BackToSchoolPage() {
             <Header />
             <main>
                 {/* Hero Section */}
-                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#e63946] to-[#ff4d5a]">
+                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#800020] to-[#a52a2a]">
                     <div className="absolute inset-0 bg-[url('/feeding.png')] bg-cover bg-center opacity-20"></div>
                     <div className="relative max-w-7xl mx-auto px-6 text-center">
                         <span className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-semibold mb-6">
@@ -33,7 +33,7 @@ export default function BackToSchoolPage() {
                         {/* Event Highlights */}
                         <div className="grid md:grid-cols-2 gap-8 mb-16">
                             <div className="bg-[#fafafa] rounded-3xl p-8">
-                                <div className="w-16 h-16 bg-[#e63946]/10 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                                <div className="w-16 h-16 bg-[#800020]/10 rounded-2xl flex items-center justify-center text-3xl mb-6">
                                     🎒
                                 </div>
                                 <h2 className="text-2xl font-bold text-[#1d1d2c] mb-4">
@@ -46,24 +46,24 @@ export default function BackToSchoolPage() {
                                 </p>
                                 <ul className="space-y-2 text-gray-600">
                                     <li className="flex items-center gap-2">
-                                        <span className="text-[#e63946]">✓</span> Free Backpacks
+                                        <span className="text-[#800020]">✓</span> Free Backpacks
                                     </li>
                                     <li className="flex items-center gap-2">
-                                        <span className="text-[#e63946]">✓</span> Free Haircuts
+                                        <span className="text-[#800020]">✓</span> Free Haircuts
                                     </li>
                                     <li className="flex items-center gap-2">
-                                        <span className="text-[#e63946]">✓</span> Sports Physicals
+                                        <span className="text-[#800020]">✓</span> Sports Physicals
                                     </li>
                                     <li className="flex items-center gap-2">
-                                        <span className="text-[#e63946]">✓</span> Health & Dental Screenings
+                                        <span className="text-[#800020]">✓</span> Health & Dental Screenings
                                     </li>
                                     <li className="flex items-center gap-2">
-                                        <span className="text-[#e63946]">✓</span> Entertainment for the Family
+                                        <span className="text-[#800020]">✓</span> Entertainment for the Family
                                     </li>
                                 </ul>
                             </div>
 
-                            <div className="bg-[#1e3a5f] rounded-3xl p-8 text-white">
+                            <div className="bg-[#4169e1] rounded-3xl p-8 text-white">
                                 <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-3xl mb-6">
                                     🍽️
                                 </div>
@@ -82,7 +82,7 @@ export default function BackToSchoolPage() {
                         </div>
 
                         {/* Impact Stats */}
-                        <div className="bg-gradient-to-r from-[#f4a261] to-[#e9c46a] rounded-3xl p-8 md:p-12 text-center mb-16">
+                        <div className="bg-gradient-to-r from-[#ffd700] to-[#e9c46a] rounded-3xl p-8 md:p-12 text-center mb-16">
                             <h3 className="text-2xl font-bold text-[#1d1d2c] mb-8">Our Annual Impact</h3>
                             <div className="grid grid-cols-3 gap-6">
                                 <div>
@@ -111,13 +111,13 @@ export default function BackToSchoolPage() {
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Link
                                     href="/donate"
-                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#e63946] text-white font-semibold rounded-full hover:bg-[#d62839] transition-colors"
+                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#800020] text-white font-semibold rounded-full hover:bg-[#d62839] transition-colors"
                                 >
                                     ❤️ Donate Now
                                 </Link>
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#1e3a5f] text-white font-semibold rounded-full hover:bg-[#2a4a6f] transition-colors"
+                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#4169e1] text-white font-semibold rounded-full hover:bg-[#2a4a6f] transition-colors"
                                 >
                                     🙋 Volunteer
                                 </Link>

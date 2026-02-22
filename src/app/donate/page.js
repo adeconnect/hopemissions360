@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Header, Footer } from '@/components';
+import { Header, Footer, PaypalDonateCard } from '@/components';
 
 export const metadata = {
     title: 'Donate | Hope Missions 360',
@@ -7,14 +7,13 @@ export const metadata = {
 };
 
 export default function DonatePage() {
-    const donationAmounts = [25, 50, 100, 250, 500];
 
     return (
         <>
             <Header />
             <main>
                 {/* Hero Section */}
-                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#e63946] to-[#ff4d5a]">
+                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#800020] to-[#a52a2a]">
                     <div className="absolute inset-0 opacity-10">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_white_1px,_transparent_1px)] bg-[size:20px_20px]"></div>
                     </div>
@@ -35,46 +34,12 @@ export default function DonatePage() {
                 {/* Donation Content */}
                 <section className="py-20 bg-white">
                     <div className="max-w-4xl mx-auto px-6">
-                        {/* Online Donation Card */}
-                        <div className="bg-[#fafafa] rounded-3xl p-8 md:p-12 mb-12">
-                            <div className="text-center mb-8">
-                                <div className="w-16 h-16 bg-[#e63946]/10 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">
-                                    💳
-                                </div>
-                                <h2 className="text-2xl font-bold text-[#1d1d2c] mb-2">Give Online</h2>
-                                <p className="text-gray-600">
-                                    Credit cards accepted for one-time or recurring donations include
-                                    Amex, Visa, MasterCard or Discover.
-                                </p>
-                            </div>
-
-                            {/* Donation Amounts */}
-                            <div className="grid grid-cols-3 md:grid-cols-6 gap-3 mb-8">
-                                {donationAmounts.map((amount) => (
-                                    <button
-                                        key={amount}
-                                        className="py-4 px-2 bg-white border-2 border-gray-200 rounded-xl text-[#1d1d2c] font-bold hover:border-[#e63946] hover:bg-[#e63946]/5 transition-all"
-                                    >
-                                        ${amount}
-                                    </button>
-                                ))}
-                                <button className="py-4 px-2 bg-white border-2 border-gray-200 rounded-xl text-[#1d1d2c] font-bold hover:border-[#e63946] hover:bg-[#e63946]/5 transition-all">
-                                    Custom
-                                </button>
-                            </div>
-
-                            <button className="w-full py-4 bg-gradient-to-r from-[#e63946] to-[#ff4d5a] text-white font-bold rounded-xl hover:shadow-lg transition-all text-lg">
-                                ❤️ Donate Now
-                            </button>
-
-                            <p className="text-center text-gray-500 text-sm mt-4">
-                                Secure payment powered by PayPal
-                            </p>
-                        </div>
+                        {/* Online Donation Card via PayPal */}
+                        <PaypalDonateCard />
 
                         {/* Mail a Check */}
                         <div className="grid md:grid-cols-2 gap-8 mb-12">
-                            <div className="bg-[#1e3a5f] rounded-2xl p-8 text-white">
+                            <div className="bg-[#4169e1] rounded-2xl p-8 text-white">
                                 <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-2xl mb-4">
                                     ✉️
                                 </div>
@@ -90,7 +55,7 @@ export default function DonatePage() {
                             </div>
 
                             <div className="bg-[#fafafa] rounded-2xl p-8">
-                                <div className="w-12 h-12 bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center text-2xl mb-4">
+                                <div className="w-12 h-12 bg-[#4169e1]/10 rounded-xl flex items-center justify-center text-2xl mb-4">
                                     🎁
                                 </div>
                                 <h3 className="text-xl font-bold text-[#1d1d2c] mb-4">Where Most Needed</h3>
@@ -103,7 +68,7 @@ export default function DonatePage() {
                         </div>
 
                         {/* Tax Info */}
-                        <div className="bg-gradient-to-r from-[#f4a261]/20 to-[#e9c46a]/20 rounded-2xl p-8 text-center">
+                        <div className="bg-gradient-to-r from-[#ffd700]/20 to-[#e9c46a]/20 rounded-2xl p-8 text-center">
                             <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-2xl mx-auto mb-4 shadow-md">
                                 📋
                             </div>
@@ -126,8 +91,68 @@ export default function DonatePage() {
                     </div>
                 </section>
 
+                {/* Registration Form */}
+                <section className="py-20 bg-[#fafafa]">
+                    <div className="max-w-4xl mx-auto px-6">
+                        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
+                            <div className="text-center mb-8">
+                                <span className="inline-block px-4 py-2 bg-[#4169e1]/10 rounded-full text-[#4169e1] text-sm font-semibold mb-4">
+                                    GET INVOLVED
+                                </span>
+                                <h2 className="text-3xl font-bold text-[#1d1d2c] mb-2">Program Registration</h2>
+                                <p className="text-gray-600">Register for our upcoming programs, events, or volunteer training sessions.</p>
+                            </div>
+
+                            <form className="space-y-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label className="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
+                                        <input type="text" required className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all" placeholder="Enter first name" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-semibold text-gray-700 mb-2">Last Name</label>
+                                        <input type="text" required className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all" placeholder="Enter last name" />
+                                    </div>
+                                </div>
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label className="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                                        <input type="email" required className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all" placeholder="Enter your email" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                                        <input type="tel" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all" placeholder="(555) 000-0000" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Program/Event to Register For</label>
+                                    <select required className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all bg-white">
+                                        <option value="">Select an option...</option>
+                                        <option value="gala">Heritage in Harmony Gala</option>
+                                        <option value="medical_mission">Annual Medical Mission Trip</option>
+                                        <option value="feeding">Monthly Feeding Program</option>
+                                        <option value="robotics">Computer Robotic Programming</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Additional Comments</label>
+                                    <textarea rows="4" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#4169e1] focus:ring-2 focus:ring-[#4169e1]/20 outline-none transition-all resize-none" placeholder="Any questions or additional information..."></textarea>
+                                </div>
+
+                                <button type="submit" className="w-full py-4 bg-[#4169e1] text-white font-bold rounded-xl hover:bg-[#2a4bba] hover:shadow-lg transition-all text-lg">
+                                    Complete Registration
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Partner CTA */}
-                <section className="py-16 bg-[#1e3a5f]">
+                <section className="py-16 bg-[#4169e1]">
                     <div className="max-w-4xl mx-auto px-6 text-center">
                         <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                             How Can You Help?
@@ -140,7 +165,7 @@ export default function DonatePage() {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#1e3a5f] font-semibold rounded-full hover:bg-gray-100 transition-colors"
+                                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#4169e1] font-semibold rounded-full hover:bg-gray-100 transition-colors"
                             >
                                 🙋 Become a Volunteer
                             </Link>

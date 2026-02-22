@@ -50,7 +50,7 @@ export default function Footer() {
                                 <li key={link.href}>
                                     <Link
                                         href={link.href}
-                                        className="text-gray-400 text-sm hover:text-[#e63946] transition-colors"
+                                        className="text-gray-400 text-sm hover:text-[#800020] transition-colors"
                                     >
                                         {link.label}
                                     </Link>
@@ -67,7 +67,7 @@ export default function Footer() {
                                 <li key={link.href}>
                                     <Link
                                         href={link.href}
-                                        className="text-gray-400 text-sm hover:text-[#e63946] transition-colors"
+                                        className="text-gray-400 text-sm hover:text-[#800020] transition-colors"
                                     >
                                         {link.label}
                                     </Link>
@@ -86,11 +86,11 @@ export default function Footer() {
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="px-4 py-3 bg-[#2d2d3c] border-2 border-[#2d2d3c] rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:border-[#e63946]"
+                                className="px-4 py-3 bg-[#2d2d3c] border-2 border-[#2d2d3c] rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:border-[#800020]"
                             />
                             <button
                                 type="submit"
-                                className="px-6 py-3 bg-gradient-to-r from-[#e63946] to-[#ff4d5a] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
+                                className="px-6 py-3 bg-gradient-to-r from-[#800020] to-[#a52a2a] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
                             >
                                 Subscribe
                             </button>

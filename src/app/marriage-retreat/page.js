@@ -12,10 +12,10 @@ export default function MarriageRetreatPage() {
             <Header />
             <main>
                 {/* Hero Section */}
-                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#1e3a5f] to-[#0f1d2f]">
+                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#4169e1] to-[#0f1d2f]">
                     <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-purple-600/20"></div>
                     <div className="relative max-w-7xl mx-auto px-6 text-center">
-                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#f4a261] text-sm font-semibold mb-6">
+                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#ffd700] text-sm font-semibold mb-6">
                             FAMILY EMPOWERMENT
                         </span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -31,7 +31,7 @@ export default function MarriageRetreatPage() {
                 <section className="py-20 bg-white">
                     <div className="max-w-4xl mx-auto px-6">
                         {/* Family Matters Card */}
-                        <div className="bg-gradient-to-br from-[#e63946] to-[#ff4d5a] rounded-3xl p-8 md:p-12 text-center text-white mb-16">
+                        <div className="bg-gradient-to-br from-[#800020] to-[#a52a2a] rounded-3xl p-8 md:p-12 text-center text-white mb-16">
                             <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-4xl mx-auto mb-6">
                                 💑
                             </div>
@@ -51,21 +51,21 @@ export default function MarriageRetreatPage() {
                         {/* Features */}
                         <div className="grid md:grid-cols-3 gap-6 mb-16">
                             <div className="bg-[#fafafa] rounded-2xl p-6 text-center">
-                                <div className="w-14 h-14 bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
+                                <div className="w-14 h-14 bg-[#4169e1]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
                                     💒
                                 </div>
                                 <h3 className="font-bold text-[#1d1d2c] mb-2">Marriage Enrichment</h3>
                                 <p className="text-gray-600 text-sm">Strengthen your marriage through faith-based principles and practical tools.</p>
                             </div>
                             <div className="bg-[#fafafa] rounded-2xl p-6 text-center">
-                                <div className="w-14 h-14 bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
+                                <div className="w-14 h-14 bg-[#4169e1]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
                                     👨‍👩‍👧‍👦
                                 </div>
                                 <h3 className="font-bold text-[#1d1d2c] mb-2">Family Workshops</h3>
                                 <p className="text-gray-600 text-sm">Interactive sessions designed to help families grow together.</p>
                             </div>
                             <div className="bg-[#fafafa] rounded-2xl p-6 text-center">
-                                <div className="w-14 h-14 bg-[#1e3a5f]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
+                                <div className="w-14 h-14 bg-[#4169e1]/10 rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
                                     💬
                                 </div>
                                 <h3 className="font-bold text-[#1d1d2c] mb-2">Zoom Meetings</h3>
@@ -74,7 +74,7 @@ export default function MarriageRetreatPage() {
                         </div>
 
                         {/* CTA */}
-                        <div className="text-center bg-[#1e3a5f] rounded-3xl p-8">
+                        <div className="text-center bg-[#4169e1] rounded-3xl p-8">
                             <h3 className="text-2xl font-bold text-white mb-4">
                                 Interested in Our Family Programs?
                             </h3>
@@ -83,7 +83,7 @@ export default function MarriageRetreatPage() {
                             </p>
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#1e3a5f] font-semibold rounded-full hover:bg-gray-100 transition-colors"
+                                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#4169e1] font-semibold rounded-full hover:bg-gray-100 transition-colors"
                             >
                                 Contact Us
                             </Link>

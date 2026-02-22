@@ -25,10 +25,7 @@ export default function Header() {
         { href: '/', label: 'Home' },
         {
             href: '/about',
-            label: 'About Us',
-            children: [
-                { href: '/team', label: 'Our Team' }
-            ]
+            label: 'About Us'
         },
         {
             href: '/programs',
@@ -43,10 +40,7 @@ export default function Header() {
         { href: '/gallery', label: 'Gallery' },
         {
             href: '/contact',
-            label: 'Contact Us',
-            children: [
-                { href: 'https://www.hopemissions360.org/store.html', label: 'Store', external: true }
-            ]
+            label: 'Contact Us'
         },
     ];
 
@@ -82,8 +76,8 @@ export default function Header() {
                         >
                             <Link
                                 href={link.href}
-                                className={`text-sm font-medium relative py-2 transition-colors hover:text-[#e63946] flex items-center gap-1 ${shouldShowSolidBg ? 'text-[#1d1d2c]' : 'text-white'
-                                    } ${pathname === link.href ? 'text-[#e63946]' : ''}`}
+                                className={`text-sm font-medium relative py-2 transition-colors hover:text-[#800020] flex items-center gap-1 ${shouldShowSolidBg ? 'text-[#1d1d2c]' : 'text-white'
+                                    } ${pathname === link.href ? 'text-[#800020]' : ''}`}
                             >
                                 {link.label}
                                 {link.children && (
@@ -103,14 +97,14 @@ export default function Header() {
                                                     href={child.href}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#1e3a5f] hover:text-white transition-colors"
+                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#4169e1] hover:text-white transition-colors"
                                                 >
                                                     {child.label}
                                                 </a>
                                             ) : (
                                                 <Link
                                                     href={child.href}
-                                                    className={`block px-4 py-2 text-sm text-gray-700 hover:bg-[#1e3a5f] hover:text-white transition-colors ${pathname === child.href ? 'bg-[#1e3a5f]/10 text-[#e63946]' : ''
+                                                    className={`block px-4 py-2 text-sm text-gray-700 hover:bg-[#4169e1] hover:text-white transition-colors ${pathname === child.href ? 'bg-[#4169e1]/10 text-[#800020]' : ''
                                                         }`}
                                                 >
                                                     {child.label}
@@ -128,7 +122,7 @@ export default function Header() {
                 <div className="flex items-center gap-4">
                     <Link
                         href="/donate"
-                        className="hidden lg:inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#e63946] to-[#ff4d5a] text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
+                        className="hidden lg:inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#800020] to-[#a52a2a] text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
                     >
                         Donate Now
                     </Link>
@@ -158,7 +152,7 @@ export default function Header() {
                             <Link
                                 href={link.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className={`block text-lg text-white font-medium hover:text-[#e63946] transition-colors py-2 ${pathname === link.href ? 'text-[#e63946]' : ''
+                                className={`block text-lg text-white font-medium hover:text-[#800020] transition-colors py-2 ${pathname === link.href ? 'text-[#800020]' : ''
                                     }`}
                             >
                                 {link.label}
@@ -173,7 +167,7 @@ export default function Header() {
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 onClick={() => setIsMobileMenuOpen(false)}
-                                                className="block text-sm text-white/80 hover:text-[#e63946] transition-colors py-2"
+                                                className="block text-sm text-white/80 hover:text-[#800020] transition-colors py-2"
                                             >
                                                 {child.label}
                                             </a>
@@ -182,7 +176,7 @@ export default function Header() {
                                                 key={child.href}
                                                 href={child.href}
                                                 onClick={() => setIsMobileMenuOpen(false)}
-                                                className={`block text-sm text-white/80 hover:text-[#e63946] transition-colors py-2 ${pathname === child.href ? 'text-[#e63946]' : ''
+                                                className={`block text-sm text-white/80 hover:text-[#800020] transition-colors py-2 ${pathname === child.href ? 'text-[#800020]' : ''
                                                     }`}
                                             >
                                                 {child.label}
@@ -196,7 +190,7 @@ export default function Header() {
                     <Link
                         href="/donate"
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="mt-6 text-center px-8 py-4 bg-gradient-to-r from-[#e63946] to-[#ff4d5a] text-white font-semibold rounded-full"
+                        className="mt-6 text-center px-8 py-4 bg-gradient-to-r from-[#800020] to-[#a52a2a] text-white font-semibold rounded-full"
                     >
                         Donate Now
                     </Link>

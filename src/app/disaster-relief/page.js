@@ -12,10 +12,10 @@ export default function DisasterReliefPage() {
             <Header />
             <main>
                 {/* Hero Section */}
-                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#1e3a5f] to-[#0f1d2f]">
-                    <div className="absolute inset-0 bg-[url('/hero.png')] bg-cover bg-center opacity-20"></div>
+                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#4169e1] to-[#0f1d2f]">
+                    <div className="absolute inset-0 bg-[url('/slides/6.jpeg')] bg-cover bg-center opacity-20"></div>
                     <div className="relative max-w-7xl mx-auto px-6 text-center">
-                        <span className="inline-block px-4 py-2 bg-[#e63946]/20 backdrop-blur-sm rounded-full text-[#e63946] text-sm font-semibold mb-6">
+                        <span className="inline-block px-4 py-2 bg-[#800020]/20 backdrop-blur-sm rounded-full text-[#800020] text-sm font-semibold mb-6">
                             EMERGENCY RESPONSE
                         </span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -32,7 +32,7 @@ export default function DisasterReliefPage() {
                 <section className="py-20 bg-white">
                     <div className="max-w-4xl mx-auto px-6">
                         {/* Mission Card */}
-                        <div className="bg-gradient-to-br from-[#e63946] to-[#ff4d5a] rounded-3xl p-8 md:p-12 text-center text-white mb-16">
+                        <div className="bg-gradient-to-br from-[#800020] to-[#a52a2a] rounded-3xl p-8 md:p-12 text-center text-white mb-16">
                             <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-4xl mx-auto mb-6">
                                 🆘
                             </div>
@@ -53,7 +53,7 @@ export default function DisasterReliefPage() {
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="bg-[#fafafa] rounded-2xl p-6">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 bg-[#e63946]/10 rounded-lg flex items-center justify-center text-xl shrink-0">
+                                        <div className="w-12 h-12 bg-[#800020]/10 rounded-lg flex items-center justify-center text-xl shrink-0">
                                             🏥
                                         </div>
                                         <div>
@@ -64,7 +64,7 @@ export default function DisasterReliefPage() {
                                 </div>
                                 <div className="bg-[#fafafa] rounded-2xl p-6">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 bg-[#e63946]/10 rounded-lg flex items-center justify-center text-xl shrink-0">
+                                        <div className="w-12 h-12 bg-[#800020]/10 rounded-lg flex items-center justify-center text-xl shrink-0">
                                             📦
                                         </div>
                                         <div>
@@ -75,7 +75,7 @@ export default function DisasterReliefPage() {
                                 </div>
                                 <div className="bg-[#fafafa] rounded-2xl p-6">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 bg-[#e63946]/10 rounded-lg flex items-center justify-center text-xl shrink-0">
+                                        <div className="w-12 h-12 bg-[#800020]/10 rounded-lg flex items-center justify-center text-xl shrink-0">
                                             🏠
                                         </div>
                                         <div>
@@ -86,7 +86,7 @@ export default function DisasterReliefPage() {
                                 </div>
                                 <div className="bg-[#fafafa] rounded-2xl p-6">
                                     <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 bg-[#e63946]/10 rounded-lg flex items-center justify-center text-xl shrink-0">
+                                        <div className="w-12 h-12 bg-[#800020]/10 rounded-lg flex items-center justify-center text-xl shrink-0">
                                             ❤️
                                         </div>
                                         <div>
@@ -99,7 +99,7 @@ export default function DisasterReliefPage() {
                         </div>
 
                         {/* CTA */}
-                        <div className="text-center bg-[#1e3a5f] rounded-3xl p-8">
+                        <div className="text-center bg-[#4169e1] rounded-3xl p-8">
                             <h3 className="text-2xl font-bold text-white mb-4">
                                 Support Our Relief Efforts
                             </h3>
@@ -109,7 +109,7 @@ export default function DisasterReliefPage() {
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Link
                                     href="/donate"
-                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#e63946] text-white font-semibold rounded-full hover:bg-[#d62839] transition-colors"
+                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#800020] text-white font-semibold rounded-full hover:bg-[#d62839] transition-colors"
                                 >
                                     ❤️ Donate Now
                                 </Link>

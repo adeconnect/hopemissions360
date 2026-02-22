@@ -69,10 +69,10 @@ export default function About() {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Section Header */}
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <span className="inline-block text-sm font-semibold text-[#e63946] uppercase tracking-widest mb-3">
+                    <span className="inline-block text-sm font-semibold text-[#800020] uppercase tracking-widest mb-3">
                         Who We Are
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mb-4">
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#4169e1] mb-4">
                         Our Mission & Vision
                     </h2>
                 </div>
@@ -86,14 +86,14 @@ export default function About() {
                             style={{ transitionDelay: `${i * 100}ms` }}
                         >
                             <div className="text-5xl mb-4">{card.icon}</div>
-                            <h3 className="text-xl font-semibold text-[#1e3a5f] mb-3">{card.title}</h3>
+                            <h3 className="text-xl font-semibold text-[#4169e1] mb-3">{card.title}</h3>
                             <p className="text-gray-500 leading-relaxed">{card.text}</p>
                         </div>
                     ))}
                 </div>
 
                 {/* Values Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-10 bg-gradient-to-br from-[#1e3a5f] to-[#152a45] rounded-3xl text-white">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-10 bg-gradient-to-br from-[#4169e1] to-[#2a4bba] rounded-3xl text-white">
                     {values.map((value, i) => (
                         <div
                             key={value.title}

@@ -146,9 +146,17 @@ export default function GalaPage() {
                             </p>
 
                             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-                                <Link href="/donate" className="group w-full md:w-auto min-w-[200px] px-8 py-5 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold text-xl rounded-full shadow-[0_0_20px_rgba(234,179,8,0.3)] hover:shadow-[0_0_40px_rgba(234,179,8,0.6)] hover:scale-105 transition-all">
-                                    Purchase Ticket ($80)
-                                </Link>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal" className="w-full md:w-auto">
+                                    <input type="hidden" name="cmd" value="_donations" />
+                                    <input type="hidden" name="currency_code" value="USD" />
+                                    <input type="hidden" name="business" value="hopemissions360@gmail.com" />
+                                    <input type="hidden" name="item_name" value="Heritage in Harmony Gala Ticket" />
+                                    <input type="hidden" name="amount" value="80" />
+                                    <input type="hidden" name="bn" value="godaddy_hosting_WPS_US" />
+                                    <button type="submit" className="group w-full md:w-auto min-w-[200px] px-8 py-5 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold text-xl rounded-full shadow-[0_0_20px_rgba(234,179,8,0.3)] hover:shadow-[0_0_40px_rgba(234,179,8,0.6)] hover:scale-105 transition-all">
+                                        Purchase Ticket ($80)
+                                    </button>
+                                </form>
                                 <Link href="/contact" className="hidden md:block w-full md:w-auto min-w-[200px] px-8 py-5 border-2 border-white/20 text-white font-bold text-xl rounded-full hover:bg-white/10 transition-all">
                                     Contact for Tables
                                 </Link>

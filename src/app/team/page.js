@@ -66,10 +66,10 @@ export default function TeamPage() {
             <Header />
             <main>
                 {/* Hero Section */}
-                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#1e3a5f] to-[#0f1d2f]">
+                <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#4169e1] to-[#0f1d2f]">
                     <div className="absolute inset-0 bg-[url('/hero.png')] bg-cover bg-center opacity-20"></div>
                     <div className="relative max-w-7xl mx-auto px-6 text-center">
-                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#f4a261] text-sm font-semibold mb-6">
+                        <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-[#ffd700] text-sm font-semibold mb-6">
                             LEADERSHIP
                         </span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -92,7 +92,7 @@ export default function TeamPage() {
                                     className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 border border-gray-100"
                                 >
                                     {/* Profile Image Placeholder */}
-                                    <div className="aspect-square bg-gradient-to-br from-[#1e3a5f] to-[#2a4a6f] flex items-center justify-center">
+                                    <div className="aspect-square bg-gradient-to-br from-[#4169e1] to-[#2a4a6f] flex items-center justify-center">
                                         <span className="text-5xl font-bold text-white/80">
                                             {member.initials}
                                         </span>
@@ -103,7 +103,7 @@ export default function TeamPage() {
                                         <h3 className="text-lg font-bold text-[#1d1d2c] mb-1">
                                             {member.name}
                                         </h3>
-                                        <p className="text-[#e63946] font-medium text-sm">
+                                        <p className="text-[#800020] font-medium text-sm">
                                             {member.role}
                                         </p>
                                     </div>
@@ -124,7 +124,7 @@ export default function TeamPage() {
                         </p>
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#1e3a5f] text-white font-semibold rounded-full hover:bg-[#2a4a6f] transition-colors"
+                            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#4169e1] text-white font-semibold rounded-full hover:bg-[#2a4a6f] transition-colors"
                         >
                             Contact Us to Volunteer
                         </Link>
