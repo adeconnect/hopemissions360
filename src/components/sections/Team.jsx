@@ -25,11 +25,13 @@ export default function Team() {
 
     const team = [
         { initials: 'AG', name: 'Alma Grace Bryan, BS', role: 'President' },
-        { initials: 'AS', name: 'Dr. Alicia Shelly, MD', role: 'V. President / Medical Director' },
+        { initials: 'OH', name: 'Dr. Oteni Hamilton, MD', role: 'V. President / Medical Director' },
         { initials: 'LS', name: 'Lorna Stanbury, RN', role: 'Director' },
         { initials: 'MM', name: 'Marvin McCain, BA', role: 'Operations Manager' },
         { initials: 'AO', name: 'Ashley Owens, RN', role: 'Nurse Manager' },
         { initials: 'RT', name: 'Dr. Robert Thomas, DDS', role: 'Dental Director' },
+        { initials: 'AF', name: 'Ashley Francis', role: 'Team Member' },
+        { initials: 'CM', name: 'Charmers Malcolm, MBA', role: 'Director' },
     ];
 
     return (

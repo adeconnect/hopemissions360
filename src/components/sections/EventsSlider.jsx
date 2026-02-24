@@ -19,6 +19,13 @@ export default function EventsSlider() {
             link: "/back-to-school"
         },
         {
+            title: "Jamaica Medical Mission Trip",
+            date: "June 3-9, 2026",
+            description: "Providing essential medical and dental care to underserved communities in Jamaica.",
+            image: "http://nebula.wsimg.com/6e79eefb39c3c18f8f6793d880e77916?AccessKeyId=ED10005F385AFE4A2117&disposition=0&alloworigin=1",
+            link: "/mission-trips"
+        },
+        {
             title: "Caribbean Medical Mission Trip",
             date: "September 2026",
             description: "Providing essential medical and dental care to underserved communities in the Caribbean.",
@@ -35,9 +42,15 @@ export default function EventsSlider() {
                         GET INVOLVED
                     </span>
                     <h2 className="text-3xl md:text-4xl font-bold text-[#1d1d2c] mb-4">Upcoming Events</h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-gray-600 max-w-2xl mx-auto mb-6">
                         Join us at our upcoming events as we work together to impact communities and change lives.
                     </p>
+                    {/* Visual cue for scrolling */}
+                    <div className="flex items-center justify-center gap-2 text-[#4169e1] font-medium bg-[#4169e1]/10 py-2 px-4 rounded-full w-fit mx-auto mt-2">
+                        <span>←</span>
+                        <span className="text-sm">Swipe to explore events</span>
+                        <span>→</span>
+                    </div>
                 </div>
 
                 {/* Snap Slider */}

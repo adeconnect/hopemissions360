@@ -12,7 +12,7 @@ import {
 
 export const metadata = {
   title: 'Hope Missions 360 | Transforming Lives Through Care',
-  description: 'Hope Missions 360 provides medical, dental, and vision care to underserved populations worldwide. Putting God\'s love in action through humanitarian service.',
+  description: 'Hope Missions 360 provides medical, dental, and vision care to underserved populations worldwide. Transforming lives through humanitarian service.',
   keywords: 'nonprofit, medical missions, humanitarian aid, dental care, vision care, disaster relief, community service',
 };
 

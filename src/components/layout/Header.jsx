@@ -55,7 +55,7 @@ export default function Header() {
         >
             <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="relative w-48 h-12">
+                <Link href="/" className="relative w-64 h-16 lg:w-80 lg:h-20">
                     <Image
                         src="http://nebula.wsimg.com/62479ba15aa9637fd397fb49cf45bb75?AccessKeyId=ED10005F385AFE4A2117&disposition=0&alloworigin=1"
                         alt="Hope Missions 360"

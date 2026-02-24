@@ -15,14 +15,14 @@ export default function TeamPage() {
             initials: 'AB'
         },
         {
-            name: 'Dr. Alicia Shelly, MD',
+            name: 'Dr. Oteni Hamilton, MD',
             role: 'V. President/Medical Director',
-            initials: 'AS'
+            initials: 'OH'
         },
         {
-            name: 'Marvia Ditsele, MBA',
+            name: 'Ashley Francis',
             role: 'Treasurer',
-            initials: 'MD'
+            initials: 'AF'
         },
         {
             name: 'Sonia James, RN',
@@ -58,6 +58,11 @@ export default function TeamPage() {
             name: 'Dr. Robert Thomas, DDS',
             role: 'Dental Director',
             initials: 'RT'
+        },
+        {
+            name: 'Charmers Malcolm, MBA',
+            role: 'Director',
+            initials: 'CM'
         }
     ];
 

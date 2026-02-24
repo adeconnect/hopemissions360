@@ -126,8 +126,9 @@ export default function AboutPage() {
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                             {[
                                 { name: 'Alma Grace Bryan, BS', role: 'President' },
-                                { name: 'Dr. Alicia Shelly, MD', role: 'V. President/Medical Director' },
-                                { name: 'Marvia Ditsele, MBA', role: 'Treasurer' },
+                                { name: 'Dr. Oteni Hamilton, MD', role: 'V. President/Medical Director' },
+                                { name: 'Ashley Francis', role: 'Treasurer' },
+                                { name: 'Charmers Malcolm, MBA', role: 'Director' },
                                 { name: 'Sonia James, RN', role: 'Admin. Assistant' }
                             ].map((member, index) => (
                                 <div key={index} className="bg-[#fafafa] rounded-2xl p-8 text-center border border-gray-100 shadow-sm hover:shadow-md transition-all">

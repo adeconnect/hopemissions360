@@ -34,11 +34,11 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                            Putting God's love in action through humanitarian care for underserved communities worldwide.
+                            Transforming lives through humanitarian care for underserved communities worldwide.
                         </p>
                         <div className="text-gray-400 text-sm">
                             <p>📧 hopemissions360@gmail.com</p>
-                            <p className="mt-1">📍 Buford, GA 30519</p>
+                            <p className="mt-1">📍 2411 Lance Ridge Way, Buford, GA 30519</p>
                         </div>
                     </div>
 

@@ -47,8 +47,8 @@ export default function Hero() {
                 </span>
 
                 <h1 className="animate-fade-up-delay-1 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6">
-                    Putting God's Love <br />
-                    <span className="text-gradient">Into Action</span>
+                    Transforming <br />
+                    <span className="text-gradient">lives</span>
                 </h1>
 
                 <p className="animate-fade-up-delay-2 text-xl md:text-2xl opacity-90 max-w-2xl mx-auto mb-10 leading-relaxed">
